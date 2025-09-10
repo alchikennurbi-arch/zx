@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: hsl(216, 69%, 11%);
+      }
+      .container {
+        background-color: hsl(216, 49%, 14%);
+        border-radius: 10px;
+        width: 350px;
+        height: 530px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .photo {
+        width: 280px;
+        height: 280px;
+        margin-left: 30px;
+        margin-top: 0px;
+        border-radius: 10px;
+        position: absolute;
+        top: 200px;
+      }
+      h3 {
+        color: white;
+        margin-left: 30px;
+      }
+      h3:hover {
+        color: aqua;
+      }
+      .a {
+        color: rgba(199, 197, 197, 0.662);
+        margin-left: 30px;
+        line-height: 20px;
+        margin-top: -8px;
+      }
+      h5 {
+        color: cyan;
+        margin-left: 50px;
+        margin-top: px;
+        position: relative;
+        bottom: 20px;
+      }
+      .avatar {
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+        margin-top: 5px;
+        border: 1px solid white;
+        border-radius: 50%;
+        position: relative;
+        bottom: -10px;
+      }
+      .days {
+        margin-left: 250px;
+        margin-top: -30px;
+        color: rgba(199, 197, 197, 0.662);
+        position: relative;
+        bottom: 148px;
+      }
+      .c {
+        color: rgba(199, 197, 197, 0.662);
+        margin-left: 70px;
+        margin-top: -20px;
+      }
+      .n {
+        width: 300px;
+        color: rgba(153, 152, 152, 0.662);
+      }
+      .QQQ {
+        position: relative;
+        bottom: -230px;
+      }
+      .jul {
+        color: white;
+        margin-left: 230px;
+        position: relative;
+        bottom: 16px;
+        left: -80px;
+      }
+      .jul:hover {
+        color: aqua;
+      }
+      /* .zzz {
+        display: flex;
+        flex-direction: row; }*/
+
+      .icon1 {
+        margin-left: 30px;
+        margin-bottom: -20px;
+      }
+      .icon2 {
+        margin-left: 230px;
+        margin-bottom: 80px;
+        position: relative;
+        bottom: 60px;
+      }
+      .bbb {
+        position: relative;
+        bottom: -70px;
+      }
+      .overlay {
+        background-color: rgba(0, 255, 255, 0.501);
+        position: absolute;
+        z-index: 1;
+        width: 280px;
+        height: 280px;
+        top: 200px;
+        left: 590px;
+        border-radius: 10px;
+        opacity: 0;
+        display: flex;
+        justify-content: centar;
+      }
+      .mm:hover .overlay {
+        opacity: 1;
+      }
+      .overlay img {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 110px;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mm">
+        <img class="photo" src="images/image-equilibrium.jpg" alt="photo" />
+        <div class="overlay">
+          <img src="images/icon-view.svg" />
+        </div>
+      </div>
+      <div class="QQQ">
+        <div>
+          <h3>Equilibrium #3429</h3>
+          <p class="a">
+            Our Equilibrium collection promotes <br />balance and calm.
+          </p>
+          <div class="zzz">
+            <img class="icon1" src="images/icon-ethereum.svg" alt="icon1" />
+            <h5>0.041 ETH</h5>
+          </div>
+          <div>
+            <p class="day"></p>
+          </div>
+          <img class="icon2" src="images/icon-clock.svg" alt="icon2" />
+          <div class="days"><p>3 days left</p></div>
+        </div>
+      </div>
+      <div class="bbb">
+        <hr class="n" />
+        <img class="avatar" src="images/image-avatar.png" alt="avatar" />
+
+        <div class="c">Creation of</div>
+        <div class="jul">Jules Wyvern</div>
+      </div>
+      <div></div>
+    </div>
+  </body>
+</html>
